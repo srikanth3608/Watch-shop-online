@@ -1,0 +1,763 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .5px .5px 10px gray;
+}
+header .logo{
+    display: flex;
+}
+header .logo img{
+    height: 100px;
+}
+header .logo ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0px 25px;
+}
+header .logo ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(78, 78, 78);
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+header .logo ul li a:hover{
+    color: rgb(197, 30, 30);
+}
+header nav input{
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+header nav input[type="search"]::placeholder{
+    padding-left: 35px;
+    font-size: 15px;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+header nav i{
+    margin-left: 5px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+header nav i:nth-child(2){
+    font-size: 20px;
+    position: absolute;
+    right: 567px;
+    top: 44px;
+    color: rgba(87, 87, 87, 0.822);
+}
+header nav a:nth-child(3) i{
+    margin-left: 25px;
+}
+header nav a:nth-child(4) i{
+    border-right: 1px solid rgba(128, 128, 128, 0.514);
+    border-left: 1px solid rgba(128, 128, 128, 0.514);
+    padding: 8px;
+}
+header nav i:nth-child(6){
+    margin-left: 30px;
+    font-size: 20px;
+}
+header nav a:nth-child(3) i:hover{
+    color: blue;
+}
+header nav a:nth-child(4) i:hover{
+    color: red;
+}
+header nav a:nth-child(5) i:hover{
+    color: orange;
+}
+header nav select{
+    width: 120px;
+    border: 1px solid rgba(128, 128, 128, 0.329);
+    height: 30px;
+    border-radius: 5px;
+}
+/* end header */
+.intro .name{
+    text-align: center;
+    color: rgb(197, 30, 30);
+    padding: 30px 0px 20px;
+}
+.intro .name h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.intro .name p{
+    margin-top: 25px;
+    font-size: 14px;
+}
+.intro .name span{
+    color: black;
+}
+.intro .backone{
+    height: 70vh;
+    background-image: url(./Asserts/images/bg/bg4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 100px 70px;
+}
+.intro .backone p:nth-child(1){
+    font-size: 40px;
+}
+.intro .backone p:nth-child(2){
+    font-size: 30px;
+    font-weight: 600;
+    margin: 5px 0px 20px;
+}
+.intro .backone p:nth-child(3){
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+.intro .backone span{
+    position: relative;
+    bottom: 13px;
+    color: white;
+}
+.intro .backone button{
+    width: 180px;
+    height: 45px;
+    font-size: 20px;
+    background-color: rgba(128, 128, 128, 0);
+    border: 1px solid white;
+    color: white;
+    transition: 0.2s;
+}
+.intro .backone button:hover{
+    background-color: white;
+    color: rgb(168, 103, 59);
+    font-weight: 600;
+}
+.intro .backone a:nth-child(5) button{
+    margin-left: 10px;
+}
+/* end bacone */
+.feature{
+    position: relative;
+    height: 75vh;
+}
+.feature img{
+    height: 370px;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+.feature .featurecont{
+    position: absolute;
+    width: 350px;
+    top: 100px;
+    right: 120px;
+}
+.feature .featurecont p:nth-child(1){
+    margin-bottom: 10px;
+    color: #00b0ad;
+    font-weight: 600;
+    font-size: 20px;
+}
+.feature .featurecont h1{
+    margin-bottom: 5px;
+}
+.feature .featurecont p:nth-child(4){
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(83, 83, 83);
+}
+.feature .featurecont button{
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #00b0ad;
+    color: white;
+    border: none;
+    transition: 0.2s;
+}
+.feature .featurecont button:hover{
+    background-color: white;
+    color: #00b0ad;
+    box-shadow: #00b0ad 0px 2px 4px 0px, #00b0ad 0px 2px 16px 0px;
+}
+.feature i{
+    position: relative;
+    font-size: 35px;
+    color: rgb(58, 58, 58);
+}
+.feature i:nth-child(1){
+    bottom: 170px;
+    left: 60px;
+}
+.feature i:nth-child(2){
+    bottom: 170px;
+    left: 1250px;
+}
+.feature i:hover{
+    color: #00b0ad;
+}
+/* enf feature */
+.offer{
+    height: 70vh;
+    background-color: rgb(34, 34, 34);
+    position: relative;
+    padding: 60px 100px;
+    color: white;
+    font-size: 20px;
+}
+.offer img{
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+.offer .futurecont{
+    width: 600px;
+    text-align: center;
+}
+.offer .futurecont h1 span:nth-child(1),
+.offer .futurecont h1 span:nth-child(2){
+    position: relative;
+    bottom: 12px;
+}
+.offer .futurecont h1:nth-child(3){
+    margin-bottom: 3px;
+    margin-top: 15px;
+    font-size: 45px;
+    color: #00dad6;
+}
+.offer .futurecont .para p:nth-child(2){
+    margin: 5px 0px;
+}
+.offer .futurecont .para p:nth-child(4){
+    margin-top: 15px;
+    font-size: 23px;
+}
+.offer .futurecont .para p:nth-child(4) span{
+    color: gray;
+    text-decoration:line-through;
+}
+.offer .futurecont button{
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #00b0ad;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    transition: 0.2s;
+}
+.offer button:hover{
+    background-color: white;
+    color: #00b0ad;
+    box-shadow: #00b0ad 0px 2px 4px 0px, #00b0ad 0px 2px 16px 0px;
+}
+/* end future2 */
+.trust{
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.trust div p{
+    text-align: center;
+}
+.trust p{
+    font-weight: 600;
+}
+.trust .emi img{
+    margin-top: 20px;
+    height: 110px;
+}
+.trust .emi p{
+    width: 100px;
+}
+.trust .warranty img{
+    height: 110px;
+    margin-top: 20px;
+}
+.trust .warranty p{
+    margin-top: 5px;
+}
+.trust .shipping img{
+    margin-top: 17px;
+    height: 110px;
+}
+.trust .cash img{
+    height: 100px;
+    margin-top: 20px;
+}
+.trust .wallet img{
+    height: 80px;
+    margin-top: 30px;
+}
+.trust .wallet p{
+    margin-top: 10px;
+    width: 100px;
+}
+/* end trust */
+.brand{
+    height: 45vh;
+}
+.brand h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight:700;
+    color: #00b0ad;
+}
+.brand .brandimg img:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.brand .brandimg img{
+    height: 75px;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    border-radius: 8px;
+    padding: 10px;
+}
+.brand .brandimg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+/* end brand */
+.log{
+    height: 70vh;
+    position: relative;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    padding-right: 15px;
+}
+.log .one{
+    margin-left: 50px;
+}
+.log .one img{
+    height: 200px;
+}
+.log .one p{
+    color: rgb(71, 71, 71);
+    width: 450px;
+    margin-top: 15px;
+}
+.log .one input{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    border: 2px solid;
+    padding-left: 15px;
+    font-size: 15px;
+}
+.log .one button{
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 17px;
+    position: absolute;
+    bottom: 119px;
+    transition: 0.2s;
+}
+.log .one button:hover{
+    color: black;
+    background-color: white;
+    box-shadow: black 0px 2px 4px 0px, black 0px 2px 16px 0px;
+}
+.log .one .rights p{
+    width: 300px;
+    text-align: center;
+    color: black;
+    margin-top: 45px;
+    margin-left: 15px;
+    font-weight: 600;
+}
+/* 2 */
+.log .two{
+    margin: 50px 20px;
+}
+.log .two textarea{
+    padding: 10px 15px;
+}
+.log .two h1{
+    margin-bottom: 15px;
+}
+.log .two input:nth-child(2),
+.log .two input:nth-child(4){
+    width: 312px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.log .two input:nth-child(7){
+    height: 40px; 
+    width: 250px;
+    margin-bottom: 10px;
+}
+.log .two select{
+    height: 40px;
+    width: 57px;
+}
+.log .two button{
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    transition: 0.2s;
+}
+.log .two button i{
+    margin-left: 7px;
+}
+.log .two button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: black 0px 2px 4px 0px, black 0px 2px 16px 0px;
+}
+/* 3 */
+.log .three{
+    margin: 50px 20px;
+}
+.log .three .social h3{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.log .three .social i{
+    font-size: 30px;
+    margin-right: 8px;
+    margin-bottom: 20px;
+}
+.log .three .social i:nth-child(2){
+    color: rgb(17, 206, 17);
+}
+.log .three .social i:nth-child(3){
+    color: rgb(13, 116, 201);
+}
+.log .three .social i:nth-child(4){
+    color: red;
+}
+.log .three .social i:nth-child(6){
+    color: rgb(15, 86, 145);
+}
+.log .three .contact{
+    color: rgb(71, 71, 71);
+}
+.log .three .contact h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: black;
+}
+.log .three .contact i{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.log .three .contact p{
+    font-size: 18px;
+}
+.log .three .contact img{
+    height: 90px;
+    margin-top: 15px;
+}
+/* end */
+footer{
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+footer div h2{
+    margin-bottom: 15px;
+    
+}
+footer div a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 3px;
+    transition: 0.2s;
+}
+footer div a:hover{
+    color: rgb(197, 30, 30);
+}
+/* end footer */
+
+@media screen and (max-width:600px){
+    header{
+        display: block;
+        width: 100%;
+    }
+    header .logo{
+        display: block;
+    }
+    .feature{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .feature img{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:425px){
+    header{
+        display: inline-block;
+        height: auto;
+    }
+    header .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .logo img{
+        height: 150px;
+    }
+    header .logo ul{
+        display: inline-block;
+    }
+    header .logo ul li{
+        margin: 5px 0;
+    }
+    header nav select{
+        margin: 10px 0 10px 150px;
+    }
+    /* end header */
+
+    .intro .name{
+        text-align: center;
+        color: rgb(197, 30, 30);
+        padding: 20px 0px;
+    }
+    .intro .name h1{
+        font-size: 25px;
+        /* text-transform: uppercase; */
+    }
+    .intro .name p{
+        margin: 10px 10px 0;
+    }
+    .intro .backone{
+        height: auto;
+        padding : 20px;
+    }
+    .intro .backone p:nth-child(1){
+        font-size: 25px;
+    }
+    .intro .backone p:nth-child(2){
+        font-size: 20px;
+        font-weight: 600;
+        margin: 5px 0px;
+    }
+    .intro .backone p:nth-child(3){
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .intro .backone span{
+        bottom: 10px;
+    }
+    .intro .backone button{
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+    }
+    /* end */
+    .feature{
+        height: 500px;
+    }
+    .feature img{
+        height: 250px;
+        margin: 0;
+    }
+    .feature .featurecont{
+        position: absolute;
+        width: 350px;
+        top: 230px;
+        right: 25px;
+        text-align: center;
+    }
+    .feature .featurecont h1{
+        margin-bottom: 5px;
+    }
+    .feature .featurecont p:nth-child(4){
+        margin-top: 20px;
+    }
+    .feature .featurecont button{
+        width: 150px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .feature i{
+        display: none;
+    }
+    /* end feature */
+    .offer{
+        height: auto;
+        position: relative;
+        padding: 0px;
+    }
+    .offer img{
+        height: 250px;
+        top: 10px;
+        right: 70px;
+        z-index: 1;
+    }
+    .offer .futurecont{
+        width: 100%;
+        top: 0px;
+        background-color: rgb(34, 34, 34);
+        padding: 270px 0 10px;
+    }
+    .offer .futurecont h1:nth-child(3){
+        margin-bottom: 5px;
+        /* margin-top: 15px; */
+        font-size: 27px;
+    }
+    .offer .futurecont .para p:nth-child(2){
+        margin: 5px 0px;
+    }
+    .offer .futurecont .para p:nth-child(4){
+        margin-top: 15px;
+        font-size: 23px;
+    }
+    .offer .futurecont button{
+        width: 170px;
+        height: 45px;
+        font-size: 15px;
+        font-weight: 600;
+        background-color: #00b0ad;
+        color: white;
+        border: none;
+        margin-top: 15px;
+        transition: 0.2s;
+    }
+    /* end offer */
+    .trust{
+        height: auto;
+        align-items: center;
+        gap: 0px;
+    }
+    .trust div p{
+        text-align: center;
+        font-weight: 600;
+        font-size: 10px;
+    }
+    .trust .emi img{
+        margin-top: 20px;
+        height: 50px;
+    }
+    .trust .emi p{
+        width: 50px;
+    }
+    .trust .warranty img{
+        height: 50px;
+        margin-top: 20px;
+    }
+    .trust .warranty p{
+        margin-top: 5px;
+    }
+    .trust .shipping img{
+        margin-top: 17px;
+        height: 50px;
+    }
+    .trust .cash img{
+        height: 40px;
+        margin-top: 20px;
+    }
+    .trust .cash p{
+        width: 50px;
+    }
+    .trust .wallet img{
+        height: 40px;
+        margin-top: 30px;
+    }
+    .trust .wallet p{
+        margin-top: 10px;
+        width: 50px;
+    }
+    /* end trust */
+    .brand{
+        height: auto;
+        padding: 10px;
+    }
+    .brand h1{
+        margin-bottom: 15px;
+    }
+    .brand .brandimg img{
+        height: 65px;
+    }
+    /* end brand */
+    .log{
+        height: auto;
+        display: inline-block;
+    }
+    .log .one p{
+        width: 350px;
+    }
+    .log .one input{
+        width: 200px;
+    }
+    .log .one button{
+        top: 297px;
+    }
+    .log .two input:nth-child(7){
+        width: 246px;
+        margin-left: 5px;
+    }
+    /* 3 */
+    .log .three{
+        margin: 50px 20px;
+    }
+    .log .three .social h3{
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    .log .three .social i{
+        font-size: 30px;
+        margin-right: 8px;
+        margin-bottom: 20px;
+    }
+    .log .three .contact img{
+        height: 80px;
+    }
+    /* end */
+    footer{
+        height: auto;
+        padding-bottom: 20px;
+        width: 100%;
+        display:inline-block;
+        text-align: center;
+    }
+    footer div h2{
+        margin-bottom: 0px;
+        margin-top: 23px;
+    }
+    footer a{
+        margin-top: 3 px;
+    }
+}

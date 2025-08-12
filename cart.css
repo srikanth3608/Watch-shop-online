@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .5px .5px 10px gray;
+}
+header .logo{
+    display: flex;
+}
+header .logo img{
+    height: 100px;
+}
+header .logo ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0px 25px;
+}
+header .logo ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(78, 78, 78);
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+header .logo ul li a:hover{
+    color: rgb(197, 30, 30);
+}
+header nav input{
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+header nav input[type="search"]::placeholder{
+    padding-left: 35px;
+    font-size: 15px;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+header nav i{
+    margin-left: 5px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+header nav i:nth-child(2){
+    font-size: 20px;
+    position: absolute;
+    right: 566px;
+    top: 44px;
+    color: rgba(87, 87, 87, 0.822);
+}
+header nav a:nth-child(3) i{
+    margin-left: 25px;
+}
+header nav a:nth-child(4) i{
+    border-right: 1px solid rgba(128, 128, 128, 0.514);
+    border-left: 1px solid rgba(128, 128, 128, 0.514);
+    padding: 8px;
+}
+header nav i:nth-child(6){
+    margin-left: 30px;
+    font-size: 20px;
+}
+header nav a:nth-child(3) i:hover{
+    color: blue;
+}
+header nav a:nth-child(4) i:hover{
+    color: red;
+}
+header nav a:nth-child(5) i:hover{
+    color: orange;
+}
+header nav select{
+    width: 120px;
+    border: 1px solid rgba(128, 128, 128, 0.329);
+    height: 30px;
+    border-radius: 5px;
+}
+/* end header */
+.logo h1{
+    color: rgb(197, 30, 30);
+    margin: 15px 20px;
+}
+.container{
+    text-align: center;
+}
+.container img{
+    margin-top: 20px;
+    height: 210px;
+}
+.container h2{
+    margin: 20px 0px;
+    text-transform: uppercase;
+    color: rgb(85, 85, 85);
+}
+.container p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.container p span{
+    color: red;
+}
+.container a button{
+    margin-bottom: 50px;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #00b0ad;
+    color: white;
+    border: none;
+    transition: 0.2s;
+    text-decoration: none;
+}
+.container a button:hover{
+    background-color: white;
+    color: #00b0ad;
+    box-shadow: #00b0ad 0px 2px 4px 0px, #00b0ad 0px 2px 16px 0px;
+}
+/* end container */
+.login-page{
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.login-page .page{
+    text-align: center;
+}
+.login-page .page img{
+    height: 250px;
+    margin-top: -90px;
+    margin-bottom: 30px;
+}
+.login-page .page a{
+    color: black;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.login-page .page a:hover{
+    color: blue;
+}
+/* end */
+.login-page .contactdet .det h1{
+    font-size: 40px;
+}
+.login-page .contactdet .det input{
+    width: 330px;
+    height: 50px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.login-page .contactdet .det button{
+    margin-top: 10px;
+    width: 200px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #00b0ad;
+    color: white;
+    border: none;
+    transition: 0.2s;
+}
+.login-page .contactdet .det button:hover{
+    background-color: white;
+    color: #00b0ad;
+    box-shadow: #00b0ad 0px 2px 4px 0px, #00b0ad 0px 2px 16px 0px;
+}
+.login-page .contactdet .gle{
+    margin-top: 25px;
+}
+.login-page .contactdet .gle p,
+.create .gle p{
+    font-size: 20px;
+    color: gray;
+}
+.login-page .contactdet .gle span,
+.create .gle p span{
+    position: relative;
+    bottom: 8px;
+}
+.login-page .contactdet .gle i,
+.create i{
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 35px;
+}
+.login-page .contactdet .gle i:nth-child(2),
+.create .gle i:nth-child(2){
+    color: red;
+}
+.login-page .contactdet .gle i:nth-child(3),
+.create .gle i:nth-child(3){
+    color: blue;
+}
+.create{
+    text-align: center;
+    margin-top: 50px;
+}
+.create h1{
+    font-size: 40px;
+}
+.create input{
+    width: 330px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 5px;
+    border: 1px solid;
+    padding-left: 10px;
+}
+.create button{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #00b0ad;
+    color: white;
+    border: none;
+    transition: 0.2s;
+}
+.create button:hover{
+    background-color: white;
+    color: #00b0ad;
+    box-shadow: #00b0ad 0px 2px 4px 0px, #00b0ad 0px 2px 16px 0px;
+}
+footer{
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+footer div h2{
+    margin-bottom: 15px;
+    
+}
+footer div a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 3px;transition: 0.2s;
+}
+footer div a:hover{
+    color: rgb(197, 30, 30);
+}
+/* end footer */
+
+@media screen and (max-width:425px){
+    header{
+        display: inline-block;
+        height: auto;
+    }
+    header .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .logo img{
+        height: 150px;
+    }
+    header .logo ul{
+        display: inline-block;
+    }
+    header .logo ul li{
+        margin: 5px 0;
+    }
+    header nav select{
+        margin: 10px 0 10px 150px;
+    }
+    /* end header */
+    .logo h1{
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+    .container img{
+        margin-top: 20px;
+        height: 160px;
+    }
+    /* end */
+    footer{
+        height: auto;
+        padding-bottom: 20px;
+        width: 100%;
+        display:inline-block;
+        text-align: center;
+    }
+    footer div h2{
+        margin-bottom: 0px;
+        margin-top: 23px;
+    }
+    footer a{
+        margin-top: 3 px;
+    }
+    /*  */
+    .login-page{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .login-page .page img{
+        height: 200px;
+        margin-top: 10px;
+    }
+    .contactdet .det{
+        margin-top: 20px;
+    }
+}
